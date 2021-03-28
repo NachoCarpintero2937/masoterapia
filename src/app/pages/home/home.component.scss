@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background:mat-color($masoterapia2-primary);
+    background:mat-color($masoterapia2-primary,400);
     box-shadow: -1px 2px 32px -4px rgba(0,0,0,0.75);
     .ma{
         color: white;
@@ -48,6 +48,7 @@
     .div_boton_turno{
         padding:10px;
         .btn_{
+          margin:20px;
             box-shadow: -1px 2px 32px -4px rgba(0,0,0,0.75)
         }
     }

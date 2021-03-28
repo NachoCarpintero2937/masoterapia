@@ -9,6 +9,11 @@ mat-toolbar{
       .logo{
         display: flex;
         align-items: center;
+        margin-top:5px;
+        .logo-img{
+          width:80px;
+          border-radius: 50%;
+        }
       }
       .botoneras{
         display: flex;
@@ -18,6 +23,9 @@ mat-toolbar{
           justify-content:center;
           margin:35px;
           color:#333;
+          font-size: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
           cursor:pointer;
         }
         .active{
