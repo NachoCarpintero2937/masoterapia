@@ -1,0 +1,64 @@
+@import '~@angular/material/theming';
+@import '../../../styles.scss';
+
+
+
+.circulo{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background:mat-color($masoterapia2-primary);
+    box-shadow: -1px 2px 32px -4px rgba(0,0,0,0.75);
+    .ma{
+        color: white;
+        font-size: 100px;
+        font-family: cursive;
+        font-weight: 600;
+        
+    }
+}
+.div_1{
+    height: 70vh;
+    align-items: center;
+    display: flex;
+    .div_sote{
+        display: flex;
+        align-items: center;
+        .soterapia{
+            color: #333;
+            font-size: 100px;
+            font-family: cursive;
+            font-weight: 600;
+        }
+    }
+    .descripcion{
+        padding:10px;
+        color:#333;
+    }
+    .div_boton_turno{
+        padding:10px;
+        .btn_{
+            box-shadow: -1px 2px 32px -4px rgba(0,0,0,0.75)
+        }
+    }
+}
+.div_2{
+    .imagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imagen{
+            border-radius: 50%;
+            width: 190px;
+            height: 190px;
+        }
+ 
+    }
+    .posicion_1{
+        margin-right: -230px;
+         margin-top: -41px;
+             }
+}

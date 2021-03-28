@@ -1,0 +1,31 @@
+
+mat-toolbar{
+    background:transparent;
+    padding:10px;
+    .toolbar{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .logo{
+        display: flex;
+        align-items: center;
+      }
+      .botoneras{
+        display: flex;
+        .botonera{
+          display: flex;
+          align-items: center;
+          justify-content:center;
+          margin:35px;
+          color:#333;
+        }
+        .active{
+          color:#015758;
+        }
+      }
+      .redes{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
