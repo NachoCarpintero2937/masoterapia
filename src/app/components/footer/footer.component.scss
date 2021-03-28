@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+@import '../../../styles.scss';
+
+
+.footer{
+    width: 70%;
+    height: 100px;
+    background: mat-color($masoterapia2-primary);
+    position: fixed;
+    right: 0px;
+    bottom:0;
+    border-top-left-radius: 100px;
+}

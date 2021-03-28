@@ -5,13 +5,16 @@
                 <span>Masoterapia BG</span>
             </div>
             <div class="botoneras">
-                <span class="botonera active">
+                <span class="botonera" [ngClass]="pantalla =='inicio' ? 'active' : ''"
+                    (click)="config.changePantallas('inicio');pantalla = 'inicio'">
                     Inicio
                 </span>
-                <span class="botonera">
+                <span class="botonera" [ngClass]="pantalla =='servicios' ? 'active' : ''"
+                    (click)="config.changePantallas('servicios');pantalla = 'servicios'">
                     Servicios
                 </span>
-                <span class="botonera">
+                <span class="botonera" [ngClass]="pantalla =='ubicacion' ? 'active' : ''"
+                    (click)="config.changePantallas('ubicacion');pantalla = 'ubicacion'">
                     Ubicación
                 </span>
             </div>

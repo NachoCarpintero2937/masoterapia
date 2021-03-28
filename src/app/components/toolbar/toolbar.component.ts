@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public config: ConfigService) { }
+  pantalla: string = 'inicio';
   ngOnInit(): void {
   }
 

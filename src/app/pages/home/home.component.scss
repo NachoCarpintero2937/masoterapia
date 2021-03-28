@@ -80,10 +80,10 @@
     // top: 100px;
     // left: 100px;
     // z-index: 800;
-    background: mat-color($masoterapia2-primary);
-    border-radius: 50%;
-    height: 320px;
-    width: 320px;
+    // background: mat-color($masoterapia2-primary);
+    // border-radius: 50%;
+    // height: 320px;
+    // width: 320px;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
     -webkit-animation-duration: 1s;
@@ -159,20 +159,3 @@
             animation-name: zoomIn;
   }
 
-.float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    background-color: mat-color($masoterapia2-primary);
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
