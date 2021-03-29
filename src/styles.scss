@@ -1,0 +1,107 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+
+// The warn palette is optional (defaults to red).
+$masoterapia2-warn: mat-palette($mat-red);
+$md-mcgpalette0: (
+    50 : #e1ebeb,
+    100 : #b3cdcd,
+    200 : #80abac,
+    300 : #4d898a,
+    400 : #277071,
+    500 : #015758,
+    600 : #014f50,
+    700 : #014647,
+    800 : #013c3d,
+    900 : #002c2d,
+    A100 : #66faff,
+    A200 : #33f8ff,
+    A400 : #00f6ff,
+    A700 : #00dee6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$masoterapia2-primary: mat-palette($md-mcgpalette0);
+$masoterapia2-accent: mat-palette($md-mcgpalette0, A200, A100, A400);
+:root {
+
+}
+$masoterapia2-theme: mat-light-theme((
+  color: (
+    primary: $masoterapia2-primary,
+    accent: $masoterapia2-accent,
+    warn: $masoterapia2-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($masoterapia2-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+   height: 100%; 
+
+}
+body { margin: 0; font-family:sans-serif;
+  // background: #f2f2f2;
+  background-image: url('./assets/images/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+.container{
+  margin:80px;
+}
+.row{
+  display:flex;
+}
+.col-md-12{
+  width:100%;
+}
+.col-md-6{
+  width:50%;
+}
+// flex
+.d-flex{
+  display: flex;
+}
+.align-items-center{
+  align-items: center;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.flex-direction-column{
+  flex-direction: column;
+}

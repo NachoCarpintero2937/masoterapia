@@ -1,0 +1,40 @@
+
+mat-toolbar{
+    background:transparent;
+    padding:10px;
+    .toolbar{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .logo{
+        display: flex;
+        align-items: center;
+        margin-top:5px;
+        .logo-img{
+          width:80px;
+          border-radius: 50%;
+        }
+      }
+      .botoneras{
+        display: flex;
+        .botonera{
+          display: flex;
+          align-items: center;
+          justify-content:center;
+          margin:35px;
+          color:#333;
+          font-size: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
+          cursor:pointer;
+        }
+        .active{
+          color:#015758;
+        }
+      }
+      .redes{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }

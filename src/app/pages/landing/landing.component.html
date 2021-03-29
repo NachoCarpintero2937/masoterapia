@@ -1,0 +1,12 @@
+<div [ngSwitch]="view">
+    <div>
+        <app-home *ngSwitchDefault></app-home>
+    </div>
+    <div>
+        <app-servicios *ngSwitchCase="'servicios'"></app-servicios>
+
+    </div>
+    <div>
+        <app-ubicacion *ngSwitchCase="'ubicacion'"></app-ubicacion>
+    </div>
+</div>

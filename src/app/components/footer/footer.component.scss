@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+@import '../../../styles.scss';
+
+
+.footer{
+    width: 70%;
+    opacity: 0.9;
+    // height: 100px;
+    background: mat-color($masoterapia2-primary,400);
+    position: fixed;
+    right: 0px;
+    bottom:0;
+    border-top-left-radius: 100px;
+    align-items: center;
+    padding:20px;
+    display:flex;
+    .descripcion{
+        padding:15px;
+        display: flex;
+        color:white;
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .redes{
+        width: 50%;
+    }
+}

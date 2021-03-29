@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+@import '../../../styles.scss';
+
+
+.float {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    margin:15px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: mat-color($masoterapia2-primary);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}

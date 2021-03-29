@@ -1,0 +1,28 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <div class="d-flex toolbar">
+            <div class="logo">
+                <img src="./assets/images/logo.jpg" class="logo-img" alt="">
+            </div>
+            <div class="botoneras">
+                <span class="botonera" [ngClass]="pantalla =='inicio' ? 'active' : ''"
+                    (click)="config.changePantallas('inicio');pantalla = 'inicio'">
+                    Inicio
+                </span>
+                <span class="botonera" [ngClass]="pantalla =='servicios' ? 'active' : ''"
+                    (click)="config.changePantallas('servicios');pantalla = 'servicios'">
+                    Servicios
+                </span>
+                <span class="botonera" [ngClass]="pantalla =='ubicacion' ? 'active' : ''"
+                    (click)="config.changePantallas('ubicacion');pantalla = 'ubicacion'">
+                    Ubicación
+                </span>
+            </div>
+            <div class="redes">
+
+                <img src="./assets/images/ig.svg" width="20" alt="">
+            </div>
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
