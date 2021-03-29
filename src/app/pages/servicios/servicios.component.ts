@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-servicios',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private config: ConfigService) {
+    this.config.changePantallas('servicios');
   }
 
+  ngOnInit(): void {
+
+  }
 }

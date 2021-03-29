@@ -8,7 +8,7 @@ import { ConfigService } from 'src/app/services/config.service';
 })
 export class LandingComponent implements OnInit {
 
-  view: string;
+  view: string = 'servicios';
   constructor(private config: ConfigService) {
     this.config.pantallas.subscribe((resp) => {
       this.view = resp;

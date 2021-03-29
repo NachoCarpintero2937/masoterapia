@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-ubicacion',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UbicacionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private config: ConfigService) {
+    this.config.changePantallas('servicios');
+  }
 
   ngOnInit(): void {
+
+
   }
 
 }
